@@ -1,0 +1,11 @@
+/node_modules/
+/public/build/
+/storybook-static/
+/package/
+/dist/
+
+.DS_Store
+.dfx
+.out
+.svelte-kit
+package-lock.json

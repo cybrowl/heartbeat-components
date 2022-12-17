@@ -1,0 +1,62 @@
+[
+    {
+        "parent_canister_id": "q3fc5-haaaa-aaaaa-aaahq-cai",
+        "metrics": [
+            ["assets_num", 43],
+            ["cycles_balance", 1000000000000],
+            ["memory_in_mb", 69],
+            ["heap_in_mb", 22]
+        ],
+        "name": "ImageAssets",
+        "time": 1670944415056248000,
+        "child_canister_id": "s24we-diaaa-aaaaa-aaaka-cai"
+    },
+    {
+        "parent_canister_id": "q3fc5-haaaa-aaaaa-aaahq-cai",
+        "metrics": [
+            ["assets_num", 43],
+            ["cycles_balance", 1000000000000],
+            ["memory_in_mb", 69],
+            ["heap_in_mb", 22]
+        ],
+        "name": "ImageAssets",
+        "time": 1671260626473150000,
+        "child_canister_id": "s24we-diaaa-aaaaa-aaaka-cai"
+    },
+    {
+        "parent_canister_id": "q3fc5-haaaa-aaaaa-aaahq-cai",
+        "metrics": [
+            ["assets_num", 69],
+            ["cycles_balance", 1000000000000],
+            ["memory_in_mb", 100],
+            ["heap_in_mb", 40]
+        ],
+        "name": "ImageAssets",
+        "time": 1671030815014233000,
+        "child_canister_id": "s24we-diaaa-aaaaa-aaaka-cai"
+    },
+    {
+        "parent_canister_id": "q3fc5-haaaa-aaaaa-aaahq-cai",
+        "metrics": [
+            ["assets_num", 43],
+            ["cycles_balance", 1000000000000],
+            ["memory_in_mb", 69],
+            ["heap_in_mb", 22]
+        ],
+        "name": "ImageAssets",
+        "time": 1671117215931340000,
+        "child_canister_id": "s24we-diaaa-aaaaa-aaaka-cai"
+    },
+    {
+        "parent_canister_id": "q3fc5-haaaa-aaaaa-aaahq-cai",
+        "metrics": [
+            ["assets_num", 89],
+            ["cycles_balance", 1000000000000],
+            ["memory_in_mb", 90],
+            ["heap_in_mb", 19]
+        ],
+        "name": "ImageAssets",
+        "time": 1671260632845127000,
+        "child_canister_id": "s24we-diaaa-aaaaa-aaaka-cai"
+    }
+]
