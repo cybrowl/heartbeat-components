@@ -12,6 +12,55 @@
     export let name = '';
     export let parent_canister_id = '';
     export let title = '';
+
+    let meter_match = {
+        memory_in_mb: {
+            peak: 1800,
+            proportional: {
+                total: 2000,
+                unit: 'MB'
+            },
+            status: {
+                ranges: [
+                    {
+                        range: [0, 800],
+                        status: 'success'
+                    },
+                    {
+                        range: [800, 1800],
+                        status: 'warning'
+                    },
+                    {
+                        range: [1800, 2000],
+                        status: 'danger'
+                    }
+                ]
+            }
+        },
+        heap_in_mb: {
+            peak: 3500,
+            proportional: {
+                total: 4000,
+                unit: 'MB'
+            },
+            status: {
+                ranges: [
+                    {
+                        range: [0, 3000],
+                        status: 'success'
+                    },
+                    {
+                        range: [3000, 3500],
+                        status: 'warning'
+                    },
+                    {
+                        range: [3500, 4000],
+                        status: 'danger'
+                    }
+                ]
+            }
+        }
+    };
 </script>
 
 <div class="canisterChart">
@@ -32,6 +81,9 @@
             bars: {
                 maxWidth: 20
             },
+            toolbar: {
+                enabled: false
+            },
             height: '500px'
         }}
     />
@@ -44,33 +96,14 @@
                     options={{
                         title: `${meter_data.group}`,
                         height: '130px',
-                        meter: {
-                            peak: 1800,
-                            proportional: {
-                                total: 2000,
-                                unit: 'MB'
-                            },
-                            status: {
-                                ranges: [
-                                    {
-                                        range: [0, 800],
-                                        status: 'success'
-                                    },
-                                    {
-                                        range: [800, 1800],
-                                        status: 'warning'
-                                    },
-                                    {
-                                        range: [1800, 2000],
-                                        status: 'danger'
-                                    }
-                                ]
-                            }
-                        },
+                        meter: meter_match[meter_data.group],
                         color: {
                             pairing: {
                                 option: 2
                             }
+                        },
+                        toolbar: {
+                            enabled: false
                         }
                     }}
                 />
