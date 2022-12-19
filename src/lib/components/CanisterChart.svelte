@@ -2,7 +2,7 @@
     import {BarChartSimple} from '@carbon/charts-svelte';
     import {MeterChart} from '@carbon/charts-svelte';
 
-    import '@carbon/styles/css/styles.css';
+    // import '@carbon/styles/css/styles.css';
     import '@carbon/charts/styles.css';
 
     export let child_canister_id = '';
