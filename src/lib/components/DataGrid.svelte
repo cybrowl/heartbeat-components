@@ -29,7 +29,7 @@
     td,
     th {
         border: 1px solid #444;
-        color: aquamarine;
+        color: #b6affc;
         padding: 8px;
     }
 
