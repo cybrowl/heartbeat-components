@@ -1,12 +1,20 @@
 <script>
+    import {createEventDispatcher} from 'svelte';
+
     export let data = [];
     export let columns = [];
+
+    const dispatch = createEventDispatcher();
+
+    function itemClick(column, row) {
+        dispatch('itemClick', {column, row});
+    }
 </script>
 
 <table>
     <tr>
         {#each columns as column}
-            <th on:resize={e => (e.target.style.width = `${e.target.offsetWidth}px`)}>
+            <th>
                 {column}
             </th>
         {/each}
@@ -14,7 +22,9 @@
     {#each data as row}
         <tr>
             {#each columns as column}
-                <td>{row[column]}</td>
+                <td on:click={() => itemClick(column, row)} on:keypress={() => console.log('key pressed')}
+                    >{row[column]}</td
+                >
             {/each}
         </tr>
     {/each}
