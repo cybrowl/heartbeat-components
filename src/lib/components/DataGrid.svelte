@@ -22,9 +22,17 @@
     {#each data as row}
         <tr>
             {#each columns as column}
-                <td on:click={() => itemClick(column, row)} on:keypress={() => console.log('key pressed')}
-                    >{row[column]}</td
-                >
+                {#if column === 'id'}
+                    <td
+                        class="idColumn"
+                        on:click={() => itemClick(column, row)}
+                        on:keypress={() => console.log('key pressed')}>{row[column]}</td
+                    >
+                {:else}
+                    <td on:click={() => itemClick(column, row)} on:keypress={() => console.log('key pressed')}
+                        >{row[column]}</td
+                    >
+                {/if}
             {/each}
         </tr>
     {/each}
@@ -54,5 +62,9 @@
     th {
         background-color: #555;
         color: white;
+    }
+
+    .idColumn {
+        @apply cursor-pointer;
     }
 </style>
