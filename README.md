@@ -2,4 +2,4 @@
 
 ### Component Lib Url
 
-https://fyjpi-ayaaa-aaaag-aabrq-cai.ic0.app/
+https://ptbiq-ryaaa-aaaag-abcta-cai.ic0.app/

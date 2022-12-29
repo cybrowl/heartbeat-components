@@ -2,7 +2,7 @@
     "name": "heartbeat-components",
     "author": "cyberowl",
     "license": "MIT",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "scripts": {
         "dev": "svelte-kit dev",
         "build": "build-storybook -c .storybook -o dist",

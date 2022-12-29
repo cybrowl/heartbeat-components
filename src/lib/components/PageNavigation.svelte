@@ -46,7 +46,4 @@
     .nav {
         @apply flex flex-row items-center;
     }
-    .nav img {
-        @apply w-9 h-9 mr-1;
-    }
 </style>
